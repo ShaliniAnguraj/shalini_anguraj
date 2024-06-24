@@ -13,7 +13,7 @@ const Work = () => {
         {mywork_data.map(( work, index) => {
           return (
             <div className="mywork-image">
-              <img key={index} src={work.w_src} />
+              <img key={index} src={work.w_src} alt=""/>
               <h1>
                 {" "}
                 <a href={work.demo} target="_blank" rel="noreferrer">

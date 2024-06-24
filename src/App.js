@@ -1,5 +1,5 @@
 import './App.css';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Work from './Components/MyWork/Work';
 import Services from './Components/Services/Services';
