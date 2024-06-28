@@ -24,7 +24,7 @@ const Profile = () => {
           </AnchorLink>
         </div>
         <div className="profile-resume">
-          <a href="https://shaliniangurajresume.tiiny.site/" target="_blank" rel="noreferrer"> Resume</a>
+          <a href="https://drive.google.com/file/d/1pJ0z7w-6N7ntX6kl6JwNvm_FAzTyNTYC/view" target="_blank" rel="noreferrer"> Resume</a>
          </div>
       </div>
     </div>
