@@ -11,7 +11,7 @@ const Contact = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    setResult("Message Send Successfully....");
     const formData = new FormData(event.target);
 
     formData.append("access_key", "91ab2ecd-4d48-4794-81e6-ad055dca59b0");
@@ -65,6 +65,7 @@ const Contact = () => {
 
           <label htmlFor="">Your message here</label>
           <textarea name="message" rows="8" placeholder="Enter your Message"></textarea>
+          <h1 className="result">{result}</h1>
           <button type="submit" className="contact-submit"> Submit now</button>
 
 

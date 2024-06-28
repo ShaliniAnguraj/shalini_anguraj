@@ -91,6 +91,10 @@
 
    
 }
+.result{
+    color: forestgreen;
+    font-size: 18px;
+}
 .contact-submit{
     display: flex;
     border:none;
