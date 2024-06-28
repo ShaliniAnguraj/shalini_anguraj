@@ -7,7 +7,7 @@ import "./contact.css";
 import { toast } from "react-toastify";
 
 const Contact = () => {
-  const [ setResult] = React.useState("");
+  const [ result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -24,7 +24,7 @@ const Contact = () => {
     const data = await response.json();
 
     if (data.success) {
-      toast.dark("Message send Successfully");
+      toast.dark("Message send Successfully😍");
       event.target.reset();
     } else {
       toast.dark(data.message);
