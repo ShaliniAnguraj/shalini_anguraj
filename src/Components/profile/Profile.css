@@ -1,100 +1,183 @@
-.profile{
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin: 40px 20px;
+  width: 170vmin;
+}
+.profile img {
+  height: 50%;
+  width: 50%;
+}
+.profile h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 70px;
+}
+.profile h1 span {
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.profile p {
+  width: 90%;
+  text-align: center;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: justify;
+}
+.profile-action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.profile-connect {
+  padding: 25px 45px;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  cursor: pointer;
+}
+.profile-resume {
+  padding: 25px 75px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.profile-resume a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.profile-connect:hover {
+  border: 2px solid white;
+}
+.profile-resume:hover {
+  border-color: #b415ff;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .profile {
+    margin-left: 60px;
+  }
+  .profile img {
+    margin-top: 80px;
+    width: 260px;
+  }
+  .profile h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    line-height: 160%;
+  }
+  .profile p {
+    width: 90%;
+    font-size: 22px;
+    line-height: 32px;
+    margin: 30px 10px;
+    margin-bottom: 50px;
+  }
+  .profile-action {
+    gap: 16px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  .profile-connect {
+    padding: 20px 30px;
+    border-radius: 40px;
+  }
+  .profile-resume {
+    padding: 20px 50px;
+    border-radius: 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .profile {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap : 15px;
-}
-.profile img{
+    gap: 15px;
+    margin: 10px 10px;
+    width: 100%;
+  }
+  .profile img {
     margin-top: 40px;
     height: 20%;
     width: 20%;
-}
-.profile h1{
+    margin-left: 0px;
+  }
+  .profile h1 {
     text-align: center;
-    width: 70%;
-    font-size: 50px;
+    width: 50%;
+    font-size: 70px;
     font-weight: 600;
-}
-.profile h1 span{
-    background : linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .profile h1 span {
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color :transparent;
-}
-.profile p{
+    -webkit-text-fill-color: transparent;
+  }
+  .profile p {
     width: 50%;
-    text-align: center;
     font-size: 24px;
     line-height: 40px;
     text-align: justify;
-}
-.profile-action{
+    align-items: center;
+    margin: 30px 10px;
+    margin-bottom: 50px;
+  }
+  .profile-action {
     display: flex;
     align-items: center;
     gap: 20px;
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 50px;
-}
-.profile-connect{
+  }
+  .profile-connect {
     padding: 25px 45px;
     border-radius: 50px;
-    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
     cursor: pointer;
-
-}
-.profile-resume{
+  }
+  .profile-resume {
     padding: 25px 75px;
     border-radius: 50px;
     border: 2px solid #fff;
     cursor: pointer;
-
-}
-.profile-resume a{
+  }
+  .profile-resume a {
     text-decoration: none;
     color: aliceblue;
-
-}
-.profile-connect:hover{
+  }
+  .profile-connect:hover {
     border: 2px solid white;
-
-}
-.profile-resume:hover{
+  }
+  .profile-resume:hover {
     border-color: #b415ff;
+  }
 }
-@media(max-width:768px){
-    .profile{
-        margin-left: 60px;
-    }
-    .profile img{
-        margin-top: 80px;
-        width: 260px;
-    }
-    .profile h1{
-        margin-top: 50px;
-        font-size: 50px;
-        line-height: 160%;
-    }
-    .profile p{
-        width: 90%;
-        font-size: 22px;
-        line-height: 32px;
-        margin: 30px 10px;
-        margin-bottom: 50px;
-    }
-    .profile-action{
-        gap: 16px;
-        font-size: 22px;
-        font-weight: 500;
-        margin-bottom: 50px;
+@media only screen and (max-width: 1280px) {
+  .profile h1 {
+    margin-top: 40px;
+    font-size: 60px;
+    line-height: 130%;
+    width: 60%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+  }
+}
 
-    }
-    .profile-connect{
-        padding: 20px 30px;
-        border-radius: 40px;
-    }
-    .profile-resume{
-        padding: 20px 50px;
-        border-radius: 40px;
-    }
-}

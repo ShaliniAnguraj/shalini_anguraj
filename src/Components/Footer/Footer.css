@@ -1,12 +1,35 @@
 .footer{
-    margin: 50px 170px;
-    display: flex;
-    flex-direction: column;
+    margin: 20px 120px;
+    align-items: center;
+    width: 100%;
 
 }
 .footer p{
-    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
+}
+
+@media only screen and(min-width: 768px){
+    .footer{
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+}
+@media only screen and (min-width: 1024px) {
+    .footer{
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 1280px) {
+
+    .footer{
+        width: 120vmin;
+        text-align: center;
+        margin: 0px 190px;
+    }
 }
